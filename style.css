@@ -1,0 +1,143 @@
+html {
+    width: 50%;
+    margin: 0 auto;
+    font-family: monospace;
+    height: 100%;
+    background-image: url('Bge.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: brightness(70%);
+}
+
+body {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: x-large;
+    font-style: italic;
+}
+
+.container {
+    width: 360px;
+    margin: 50px auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#inputField {
+    width: 250px;
+    height: 40px;
+    border: 1px solid #fff;
+    outline: none;
+    font-size: 20px;
+    vertical-align: middle;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#addToDo {
+    height: 50px;
+    width: 50px;
+    border: 1px solid #fff;
+    vertical-align: middle;
+    font-size: 30px;
+    background-color: #aeff7c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#addToDo:hover {
+    background-color: #9bff8e;
+}
+
+.to-dos {
+    margin-top: 25px;
+    list-style: none;
+    padding: 0;
+}
+
+.paragraph-styling {
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: left;
+    color: #ffeb3b;
+}
+
+.paragraph-styling:hover {
+    text-decoration: underline;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.check-btn {
+    font-size: 18px;
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.check-btn:hover {
+    background-color: darkgreen;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+/* Style the circular checkbox for selection*/
+.circle-checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+    cursor: pointer;
+}
+
+.circle-checkbox:checked {
+    background-color: #ffffff;
+}
+
+/*style the delete button*/
+.delete-wrapper {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+}
+
+.delete-btn {
+    font-size: 50px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.delete-btn:hover {
+    transform: scale(1.2);
+}
+
+.delete-wrapper small {
+    display: block;
+    font-size: 25px;
+    color: #fff;
+}
